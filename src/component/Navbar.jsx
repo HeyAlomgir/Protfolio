@@ -17,7 +17,7 @@ const Navbars = () => {
     ];
     return (
         <div>
-            <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4">
+            <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4 ">
                 <div className="max-w-7xl mx-auto flex justify-between items-center">
 
                     {/* Brand Identification */}
@@ -36,7 +36,7 @@ const Navbars = () => {
                         {menuItems.map((item, index) => (
                             <a
                                 key={index}
-                                href={item.path} // 💡 Auto smooth anchor target scroll linking configuration property injection execution tool
+                                href={item.path} 
                                 className="text-slate-600 hover:text-cyan-500 text-sm font-semibold tracking-wide transition duration-150"
                             >
                                 {item.name}
