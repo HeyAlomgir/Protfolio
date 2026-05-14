@@ -8,8 +8,8 @@ const Navbars = () => {
 
     // Layout navigation compliance active routes tracking configuration array 
     const menuItems = [
-        { name: "Home", path: "/" },
-        { name: "About", path: "/about" },
+        { name: "Home", path: "#home" },
+        { name: "About", path: "#about" },
         { name: "Services", path: "/services" },
         { name: "Skills", path: "/skills" },
         { name: "Projects", path: "#projects" },

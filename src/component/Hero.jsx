@@ -14,10 +14,10 @@ const Hero = () => {
 
   return (
 
-    <div className="w-full flex items-center justify-center px-6 py-6">
+    <div id="home" className="w-full flex items-center justify-center px-6 py-6">
 
 
-      <div className="max-w-5xl w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 -mt-50">
+      <div className="max-w-7xl w-full mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 mt-50">
 
         {/* left side */}
         <div className="flex-1 text-center md:text-left space-y-4">
@@ -90,13 +90,14 @@ const Hero = () => {
 
         <div className="flex-1 flex justify-center items-center">
 
-          <div className="w-48 h-48 md:w-64 md:h-64 rounded-full p-1 bg-gradient-to-tr from-cyan-400 to-blue-500 shadow-xl shadow-cyan-500/5 flex items-center justify-center">
+          <div className="w-48 h-48 md:w-94 md:h-94 rounded-full p-1 bg-gradient-to-tr from-cyan-400 to-blue-500 shadow-xl shadow-cyan-500/5 flex items-center justify-center">
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-white bg-slate-50 flex items-center justify-center">
               <Image
-                src={"https://i.ibb.co.com/FbB133xZ/ghh-optimized-200-removebg-preview.png"}
+                // src={"https://i.ibb.co.com/FbB133xZ/ghh-optimized-200-removebg-preview.png"}
+                src={"https://i.ibb.co.com/Z67td2TS/Alomgir-2.png"}
                 alt="Alomgir Hossain Logo"
-                width={200}
-                height={200}
+                width={400}
+                height={400}
                 className="w-full h-full object-cover"
               />
             </div>

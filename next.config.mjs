@@ -7,9 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: "i.ibb.co.com", // ImgBB er asset image link domain
-        port: '',
-        pathname: '/**',
+        hostname:  "**",
       },
     ],
   },
