@@ -1,5 +1,7 @@
 import About from "@/component/About";
 import Hero from "@/component/Hero";
+import Skills from "@/component/Skills";
+import Technoloi from "@/component/Technoloi";
 
 
 
@@ -9,6 +11,8 @@ export default function Home() {
      
     <Hero/>
     <About/>
+    <Technoloi/>
+    <Skills/>
    
     </div>
   );

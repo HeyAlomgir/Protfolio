@@ -1,17 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
 import Navbars from "@/component/Navbar";
+import { ToastContainer } from "react-toastify";
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const jakartaSans = Plus_Jakarta_Sans({ 
+  subsets: ['latin'],
+  display: 'swap', 
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 export const metadata = {
   title: "Create Next App",
@@ -23,12 +21,12 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme="light"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${jakartaSans.className}h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbars/>
         {children}
-        
+         <ToastContainer />
       </body>
     </html>
   );

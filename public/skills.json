@@ -1,0 +1,18 @@
+{
+  "frontend": [
+    { "name": "HTML5", "level": "Expert" },
+    { "name": "CSS3", "level": "Expert" },
+    { "name": "JavaScript", "level": "Expert" },
+    { "name": "React.js", "level": "Expert" },
+    { "name": "Next.js", "level": "Expert" },
+    { "name": "Tailwind CSS", "level": "Expert" }
+   
+  ],
+  "backend": [
+    { "name": "MongoDB", "level": "Expert" },
+    { "name": "Better-Auth", "level": "Expert" },
+    { "name": "Node.js", "level": "Intermediate" },
+    { "name": "Express.js", "level": "Intermediate" }
+  ]
+
+}

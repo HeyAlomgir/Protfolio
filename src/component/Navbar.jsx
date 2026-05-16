@@ -10,8 +10,8 @@ const Navbars = () => {
     const menuItems = [
         { name: "Home", path: "#home" },
         { name: "About", path: "#about" },
+        { name: "Skills", path: "#skills" },
         { name: "Services", path: "/services" },
-        { name: "Skills", path: "/skills" },
         { name: "Projects", path: "#projects" },
         { name: "Contact", path: "/contact" }
     ];

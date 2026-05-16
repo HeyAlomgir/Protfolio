@@ -2,11 +2,15 @@ import { Card } from "@heroui/react";
 import Image from "next/image";
 import { FaAward, FaFolderOpen, FaHeadset } from "react-icons/fa";
 
+
 export default function About() {
   return (
     <div id="about"
       className="max-w-7xl mx-auto px-6 py-24"
     >
+
+
+
       {/* Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold">
@@ -21,92 +25,85 @@ export default function About() {
       {/* Content */}
       <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-        {/* Left Image */}
-        {/* <div className="flex justify-center">
-          <Image 
-        //   className="w-94 h-94 rounded-2xl object-cover border-4 border-slate-50 shadow-lg shadow-slate-100 transition-all duration-300 hover:shadow-cyan-500/10"
-
-         className=" w-8/12 lg:w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
-
-
-
-            src={"https://i.ibb.co.com/Z67td2TS/Alomgir-2.png"}
-            alt="About Image"
-            width={420}
-            height={420}
-           
-          />
-        </div> */}
+       
         <div className="flex-1 flex justify-center items-center">
-  {/* ১. বাইরের মূল ফ্রেম যা ছবির ব্যাকগ্রাউন্ডে গ্লোয়িং বর্ডার তৈরি করবে */}
-  <div className="group relative md:w-8/12 lg:w-full lg:h-full  rounded-2xl p-1 bg-gradient-to-tr from-cyan-400 to-blue-500 shadow-xl shadow-cyan-500/20 flex items-center justify-center transition-all duration-500 hover:scale-[1.02] hover:rotate-1">
-    
-    {/* ২. ভেতরের সাদা বর্ডার ফ্রেম */}
-    <div className="w-full h-full rounded-2xl overflow-hidden border-[4px] border-white bg-slate-50 flex items-center justify-center">
-      <Image 
-        className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
-        src={"https://i.ibb.co.com/Z67td2TS/Alomgir-2.pngco.com"}
-        alt="About Image"
-        width={420}
-        height={420}
-      />
-    </div>
+          {/* ১. বাইরের মূল ফ্রেম যা ছবির ব্যাকগ্রাউন্ডে গ্লোয়িং বর্ডার তৈরি করবে */}
+          <div className="group relative md:w-8/12 lg:w-full lg:h-full  rounded-2xl p-1 bg-gradient-to-tr from-cyan-400 to-blue-500 shadow-xl shadow-cyan-500/20 flex items-center justify-center transition-all duration-500 hover:scale-[1.02] hover:rotate-1">
 
-  </div>
-</div>
+            {/* ২. ভেতরের সাদা বর্ডার ফ্রেম */}
+            <div className="w-full h-full rounded-2xl overflow-hidden border-[4px] border-white bg-slate-50 flex items-center justify-center">
+              <Image
+                className="w-full h-full object-cover  animate-pulse 
+                shadow-[0_0_15px_rgba(34,211,238,0.5)] 
+                hover:shadow-[0_0_25px_rgba(34,211,238,0.8)]transition-all duration-500 group-hover:scale-110"
+                src={"https://i.ibb.co.com/Z67td2TS/Alomgir-2.pngco.com"}
+                alt="About Image"
+                width={420}
+                height={420}
+              />
+            </div>
+
+          </div>
+        </div>
 
         {/* Right Side */}
         <div>
 
           {/* Cards */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
 
             {/* Card 1 */}
-            <Card className="border border-white/10  shadow-2xl hover:border-blue-500">
-                <div className="p-2 text-center  transition">
+            <Card className="border border-white/10  hover:border-blue-500  animate-pulse 
+                shadow-[0_0_15px_rgba(34,211,238,0.5)] 
+                hover:shadow-[0_0_25px_rgba(34,211,238,0.8)]">
+              <div className="p-2 text-center  transition">
 
-              <FaAward className="mx-auto text-2xl text-blue-500 mb-3" />
+                <FaAward className="mx-auto text-2xl text-blue-500 mb-3" />
 
-              <h3 className="font-semibold text-lg">
-                Experience
-              </h3>
+                <h3 className="font-semibold text-lg">
+                  Experience
+                </h3>
 
-              <p className="text-sm text-gray-400 mt-1">
-                1+ Years Learning
-              </p>
-            </div>
+                <p className="text-sm text-gray-400 mt-1">
+                  1+ Years Learning
+                </p>
+              </div>
             </Card>
 
             {/* Card 2 */}
-            <Card className="border border-white/10  shadow-2xl hover:border-blue-500">
-                <div className="p-2 text-center hover:border-blue-500 transition">
+            <Card className="border border-white/10   hover:border-blue-500  animate-pulse 
+                shadow-[0_0_15px_rgba(34,211,238,0.5)] 
+                hover:shadow-[0_0_25px_rgba(34,211,238,0.8)]">
+              <div className="p-2 text-center hover:border-blue-500 transition">
 
-              <FaFolderOpen className="mx-auto text-2xl text-blue-500 mb-3" />
+                <FaFolderOpen className="mx-auto text-2xl text-blue-500 mb-3" />
 
-              <h3 className="font-semibold text-lg">
-                Projects
-              </h3>
+                <h3 className="font-semibold text-lg">
+                  Projects
+                </h3>
 
-              <p className="text-sm text-gray-400 mt-1">
-                30+ Completed
-              </p>
-            </div>
+                <p className="text-sm text-gray-400 mt-1">
+                  30+ Completed
+                </p>
+              </div>
             </Card>
 
             {/* Card 3 */}
-            <Card className="border border-white/10  shadow-2xl hover:border-blue-500">
-                <div className="p-2 text-center hover:border-blue-500 transition">
+            <Card className="border border-white/10  hover:border-blue-500  animate-pulse 
+                shadow-[0_0_15px_rgba(34,211,238,0.5)] 
+                hover:shadow-[0_0_25px_rgba(34,211,238,0.8)]">
+              <div className="p-2 text-center hover:border-blue-500 transition">
 
-              <FaHeadset className="mx-auto text-2xl text-blue-500 mb-3" />
+                <FaHeadset className="mx-auto text-2xl text-blue-500 mb-3" />
 
-              <h3 className="font-semibold text-lg">
-                Support
-              </h3>
+                <h3 className="font-semibold text-lg">
+                  Support
+                </h3>
 
-              <p className="text-sm text-gray-400 mt-1">
-                Online 24/12
-              </p>
-            </div>
+                <p className="text-sm text-gray-400 mt-1">
+                  Online 24/12
+                </p>
+              </div>
             </Card>
 
           </div>
@@ -133,6 +130,11 @@ export default function About() {
 
         </div>
       </div>
+
+       {/* Tecnoloyies */}
+
+
+
     </div>
   );
 }
