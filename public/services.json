@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Development",
+    "icon": "frontend",
+    "shortTitle": "Frontend\nDevelopment",
+
+    "description": "Crafting modern and responsive user interfaces using React.js, Next.js, Tailwind CSS, and JavaScript.",
+
+    "features": [
+      "Responsive User Interfaces: Clean and modern designs for all devices.",
+      "Modern UI/UX Design",
+      "Fast Performance Optimization",
+      "Cross Browser Compatibility",
+      "Mobile Friendly Layouts"
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Backend Development",
+    "icon": "backend",
+    "shortTitle": "Backend\nDevelopment",
+
+    "description": "Building secure and scalable backend systems using Node.js, Express.js, and MongoDB.",
+
+    "features": [
+      "REST API Development",
+      "Authentication & Authorization",
+      "Database Management",
+      "Server Side Logic",
+      "Secure Data Handling"
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Full Stack Development",
+    "icon": "fullstack",
+    "shortTitle": "Full Stack\nDevelopment",
+
+    "description": "Developing complete full stack web applications with frontend, backend, APIs, authentication, and database integration.",
+
+    "features": [
+      "Complete Web Applications",
+      "Frontend & Backend Integration",
+      "Authentication Systems",
+      "Dynamic Dashboards",
+      "Realtime Features"
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "MERN Stack Development",
+    "icon": "mern",
+    "shortTitle": "MERN Stack\nDevelopment",
+
+    "description": "Building scalable MERN stack applications using MongoDB, Express.js, React.js, and Node.js.",
+
+    "features": [
+      "MongoDB Database Integration",
+      "RESTful API Development",
+      "Modern React Frontend",
+      "Node.js Server Development",
+      "Full MERN Architecture"
+    ]
+  }
+]

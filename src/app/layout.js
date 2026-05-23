@@ -1,7 +1,7 @@
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
 import Navbars from "@/component/Navbar";
-import { ToastContainer } from "react-toastify";
+import { Toaster } from 'react-hot-toast';
 
 const jakartaSans = Plus_Jakarta_Sans({ 
   subsets: ['latin'],
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbars/>
         {children}
-         <ToastContainer />
+         <Toaster/>
       </body>
     </html>
   );
