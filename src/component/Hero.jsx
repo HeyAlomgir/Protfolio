@@ -65,13 +65,21 @@ const Hero = () => {
           {/* Resume */}
 
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
-            <Button
-              href="#"
-              onClick={(e) => { e.preventDefault(); alert('Resume download system is processing!'); }}
-              className="w-full sm:w-auto text-center bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-xs px-6 py-3.5 rounded-xl shadow-md shadow-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20"
+            {/* <Button
+              href="/Alomgir_Resume.pdf"
+              download="Alogir_Resume.pdf"
+              // onClick={(e) => { e.preventDefault(); alert('Resume download system is processing!'); }}
+              className="w-full sm:w-auto text-centerbg-blue-600 text-white  font-bold text-xs px-6 py-3.5 rounded-xl shadow-md shadow-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20"
             >
               Download Resume
-            </Button>
+            </Button> */}
+             <a
+    href="/Alomgir_Resume.pdf"
+    download="Alomgir_Resume.pdf"
+    className="w-full sm:w-auto text-center bg-blue-600 text-white font-bold text-xs px-6 py-3.5 rounded-xl shadow-md shadow-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 block"
+  >
+    Download Resume
+  </a>
             <div className="flex gap-2 justify-center">
               {socialLinks.map((social, i) => (
                 <a key={i}
