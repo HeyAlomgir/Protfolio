@@ -1,5 +1,7 @@
 import About from "@/component/About";
+import Education from "@/component/Education";
 import Hero from "@/component/Hero";
+import ProjectsPage from "@/component/Project";
 import Services from "@/component/Services";
 import Skills from "@/component/Skills";
 import Technoloi from "@/component/Technoloi";
@@ -15,6 +17,8 @@ export default function Home() {
     <Technoloi/>
     <Skills/>
     <Services/>
+    <Education/>
+    <ProjectsPage/>
    
     </div>
   );
