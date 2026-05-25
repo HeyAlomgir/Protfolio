@@ -2,6 +2,7 @@
 import { Button } from "@heroui/react";
 import { IoIosSend } from "react-icons/io";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
+import toast from "react-hot-toast";
 
 const Contact = () => {
 
@@ -24,14 +25,14 @@ const Contact = () => {
     const result = await response.json();
 
     if (response.ok && result.success) {
-      alert("Message sent successfully to MongoDB! 🎉");
-      e.target.reset(); // ইনপুট বক্স খালি হয়ে যাবে
+      toast.success("Message sent successfully to MongoDB! 🎉");
+      e.target.reset(); 
     } else {
       alert(`Failed to send message: ${result.error || 'Unknown error'}`);
     }
   } catch (error) {
-    console.error("Connection Error:", error);
-    alert("Connection failed! Something went wrong.");
+
+    toast.error("Connection failed! Something went wrong.");
   }
 };
 
@@ -138,7 +139,7 @@ const Contact = () => {
               </div>
 
               {/* 💡 আপনার প্রিয় HeroUI বাটনের নিখুঁত কোড ডিজাইন */}
-              <Button 
+              <Button
                 type="submit"
                 className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-sm px-8 py-6 rounded-2xl shadow-lg shadow-cyan-500/10 flex items-center justify-center gap-2 transition transform hover:-translate-y-0.5"
               >

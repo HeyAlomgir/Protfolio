@@ -47,9 +47,15 @@ const Navbars = () => {
 
                     {/* Action Button */}
                     <div className="hidden md:flex items-center">
-                        <a href="#" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-md">
-                            Resume
-                        </a>
+                        <a
+              href="/Alomgir_Resume.pdf"
+              download="Alomgir_Resume.pdf"
+              className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-sm px-8 py-6 rounded-2xl shadow-lg shadow-cyan-500/10 flex items-center justify-center gap-2 transition transform hover:-translate-y-0.5"
+              
+              
+            >
+              Download Resume
+            </a>
                     </div>
 
                     {/* Mobile View Interactive Hamburger Switch */}

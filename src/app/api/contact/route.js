@@ -8,13 +8,13 @@ export async function POST(request) {
   try {
     const body = await request.json();
 
-    // মঙ্গোডিবি ডাটাবেসের সাথে কানেক্ট হওয়া
+
     const client = new MongoClient(uri);
     await client.connect();
     
-    const db = client.db("portfolio"); // ডাটাবেসের নাম 'portfolio'
+    const db = client.db("portfolio"); 
 
-    // 'messages' নামের কালেকশন বা টেবিলে ফর্মের ডাটা সেভ হচ্ছে
+
     const result = await db.collection("messages").insertOne({
       name: body.username,
       email: body.useremail,
@@ -22,8 +22,7 @@ export async function POST(request) {
       createdAt: new Date()
     });
 
-    await client.close(); // কানেকশন বন্ধ করা হলো
-
+    await client.close();
     return NextResponse.json({ success: true, id: result.insertedId }, { status: 200 });
   } catch (error) {
     console.error("MongoDB Server Error:", error);

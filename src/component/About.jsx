@@ -27,10 +27,10 @@ export default function About() {
 
        
         <div className="flex-1 flex justify-center items-center">
-          {/* ১. বাইরের মূল ফ্রেম যা ছবির ব্যাকগ্রাউন্ডে গ্লোয়িং বর্ডার তৈরি করবে */}
+         
           <div className="group relative md:w-8/12 lg:w-full lg:h-full  rounded-2xl p-1 bg-gradient-to-tr from-cyan-400 to-blue-500 shadow-xl shadow-cyan-500/20 flex items-center justify-center transition-all duration-500 hover:scale-[1.02] hover:rotate-1">
 
-            {/* ২. ভেতরের সাদা বর্ডার ফ্রেম */}
+
             <div className="w-full h-full rounded-2xl overflow-hidden border-[4px] border-white bg-slate-50 flex items-center justify-center">
               <Image
                 className="w-full h-full object-cover  animate-pulse 
@@ -124,9 +124,15 @@ export default function About() {
           </p>
 
           {/* Button */}
-          <button className="mt-10 px-7 py-4 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold hover:scale-105 transition">
-            Download Resume
-          </button>
+           <a
+              href="/Alomgir_Resume.pdf"
+              download="Alomgir_Resume.pdf"
+              className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-sm px-8 py-6 rounded-2xl shadow-lg shadow-cyan-500/10 flex items-center justify-center gap-2 transition transform hover:-translate-y-0.5"
+              
+              
+            >
+              Download Resume
+            </a>
 
         </div>
       </div>
