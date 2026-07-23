@@ -69,7 +69,7 @@ const Hero = () => {
       <div className='relative z-10 max-w-[1500px] mx-auto px-6 lg:px-10 pt-32 pb-20'>
         <div className='grid lg:grid-cols-2 gap-16 items-center'>
 
-          {/* LEFT CONTENT - মোবাইলে দ্বিতীয়, ডেস্কটপে প্রথম (বাম) */}
+          {/* LEFT CONTENT - */}
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
@@ -111,7 +111,7 @@ const Hero = () => {
                 </span>
               </div>
 
-              {/* Tagline - এখন typewriter লাইনের ঠিক নিচে */}
+              {/* Tagline - Tapwriter */}
               <p className='text-cyan-600 dark:text-cyan-400 font-semibold text-sm md:text-base'>
                 🚀 Turning ideas into Stunning Websites 💻 | Available for projects and collaborations 🌟
               </p>
@@ -163,7 +163,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT AVATAR DESIGN - মোবাইলে প্রথম, ডেস্কটপে দ্বিতীয় (ডান) */}
+          {/* RIGHT AVATAR DESIGN -  */}
           <motion.div
             initial={{ opacity: 0, x: 60, scale: 0.95 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
