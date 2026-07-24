@@ -1,0 +1,55 @@
+{
+    "brand": {
+        "name": "Alomgir Hossain",
+        "title": "Full Stack Developer",
+        "description": "I build modern, scalable and user-friendly web applications with the MERN Stack and Next.js."
+    },
+    "quickLinks": [
+        {
+            "name": "Home",
+            "href": "#home"
+        },
+        {
+            "name": "About",
+            "href": "#about"
+        },
+        {
+            "name": "Skills",
+            "href": "#skills"
+        },
+        {
+            "name": "Services",
+            "href": "#services"
+        },
+        {
+            "name": "Education",
+            "href": "#education"
+        },
+        {
+            "name": "Projects",
+            "href": "#projects"
+        },
+        {
+            "name": "Contact",
+            "href": "#contact"
+        }
+    ],
+    "socialLinks": [
+        {
+            "name": "GitHub",
+            "icon": "github",
+            "url": "https://github.com/HeyAlomgir"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/in/alomgir-hossain-web/"
+        },
+        {
+            "name": "Facebook",
+            "icon": "facebook",
+            "url": "https://www.facebook.com/alomgir.hossain.938369"
+        }
+    ],
+    "copyright": "© 2026 Alomgir Hossain. All Rights Reserved."
+}

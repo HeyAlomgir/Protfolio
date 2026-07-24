@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "status": "Ongoing",
+        "icon": "college",
+        "degree": "Diploma in Engineering (Computer Science & Technology)",
+        "institution": "Mymensingh Polytechnic Institute",
+        "duration": "2023 - Present",
+        "desc": "Currently pursuing a Diploma in Computer Science & Technology (CST). Alongside my academic studies, I specialize in Full Stack Web Development using React.js, Next.js, Node.js, Express.js, MongoDB, Better Auth, TypeScript (Basic), and modern web technologies by building real-world projects."
+    },
+    {
+        "id": 2,
+        "status": "Completed",
+        "icon": "course",
+        "degree": "Complete Web Development Course",
+        "institution": "Programming Hero",
+        "duration": "2025 - 2026",
+        "desc": "Successfully completed an intensive Full Stack Web Development course. Learned HTML5, CSS3, JavaScript, ,Typescript(Basic) React.js, Next.js, Tailwind CSS,DaisiUI, HeroUI, Node.js, Express.js, MongoDB, Better Auth, Stripe, Git, GitHub, and deployment while building multiple real-world full stack applications."
+    },
+    {
+        "id": 3,
+        "status": "Completed",
+        "icon": "school",
+        "degree": "Secondary School Certificate (SSC)",
+        "institution": "Konapara High School",
+        "duration": "2023",
+        "desc": "Successfully completed the Secondary School Certificate (SSC), building a strong academic foundation before continuing higher education in Computer Science & Technology."
+    }
+]
