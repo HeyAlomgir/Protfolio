@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { Card } from '@heroui/react';
 import Marquee from 'react-fast-marquee';
+import toast from 'react-hot-toast';
 import { FaAward, FaFolderOpen, FaHeadset, FaDownload, FaJsSquare, FaNode, FaReact, FaCss3Alt } from 'react-icons/fa';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import {
@@ -48,6 +49,36 @@ const tabs = Object.keys(tabSkills);
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(tabs[0]);
+
+  // Resume download with toast progress
+  const handleDownload = () => {
+    const toastId = toast.loading('Preparing resume download...');
+
+    let progress = 0;
+
+    const interval = setInterval(() => {
+      progress += 20;
+
+      toast.loading(`Downloading Resume... ${progress}%`, {
+        id: toastId,
+      });
+
+      if (progress >= 100) {
+        clearInterval(interval);
+
+        toast.success('Resume downloaded successfully!', {
+          id: toastId,
+        });
+
+        const link = document.createElement('a');
+        link.href = '/Alomgir_Resume.pdf';
+        link.download = 'Alomgir_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    }, 250);
+  };
 
   return (
     <section
@@ -207,16 +238,15 @@ export default function About() {
             </div>
 
             <div className='pt-4'>
-              <motion.a
-                href='/Alomgir_Resume.pdf'
-                download='Alomgir_Resume.pdf'
+              <motion.button
+                onClick={handleDownload}
                 whileHover={{ y: -3, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className='inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300'
+                className='inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 cursor-pointer'
               >
                 <FaDownload />
                 Download Resume
-              </motion.a>
+              </motion.button>
             </div>
           </motion.div>
         </div>

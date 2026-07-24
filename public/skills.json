@@ -1,18 +1,170 @@
 {
+  "all": [
+    {
+      "name": "Next.js",
+      "level": 90
+    },
+    {
+      "name": "React.js",
+      "level": 90
+    },
+    {
+      "name": "Node.js",
+      "level": 80
+    },
+    {
+      "name": "Express.js",
+      "level": 78
+    },
+    {
+      "name": "MongoDB",
+      "level": 82
+    },
+    {
+      "name": "Better Auth",
+      "level": 78
+    },
+    {
+      "name": "JavaScript",
+      "level": 88
+    },
+    {
+      "name": "TypeScript",
+      "level": 35
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 92
+    },
+    {
+      "name": "HeroUI",
+      "level": 85
+    },
+    {
+      "name": "DaisyUI",
+      "level": 82
+    },
+    {
+      "name": "HTML5",
+      "level": 96
+    },
+    {
+      "name": "CSS3",
+      "level": 94
+    },
+    {
+      "name": "Git",
+      "level": 88
+    },
+    {
+      "name": "GitHub",
+      "level": 88
+    },
+    {
+      "name": "Figma",
+      "level": 75
+    },
+    {
+      "name": "Penpot",
+      "level": 65
+    },
+    {
+      "name": "Vercel",
+      "level": 90
+    },
+    {
+      "name": "Netlify",
+      "level": 85
+    },
+    {
+      "name": "Render",
+      "level": 82
+    }
+  ],
   "frontend": [
-    { "name": "HTML5", "level": "Expert" },
-    { "name": "CSS3", "level": "Expert" },
-    { "name": "JavaScript", "level": "Expert" },
-    { "name": "React.js", "level": "Expert" },
-    { "name": "Next.js", "level": "Expert" },
-    { "name": "Tailwind CSS", "level": "Expert" }
-   
+    {
+      "name": "Next.js",
+      "level": 90
+    },
+    {
+      "name": "React.js",
+      "level": 90
+    },
+    {
+      "name": "JavaScript",
+      "level": 88
+    },
+    {
+      "name": "TypeScript",
+      "level": 35
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 92
+    },
+    {
+      "name": "HeroUI",
+      "level": 85
+    },
+    {
+      "name": "DaisyUI",
+      "level": 82
+    },
+    {
+      "name": "HTML5",
+      "level": 96
+    },
+    {
+      "name": "CSS3",
+      "level": 94
+    }
   ],
   "backend": [
-    { "name": "MongoDB", "level": "Expert" },
-    { "name": "Better-Auth", "level": "Expert" },
-    { "name": "Node.js", "level": "Intermediate" },
-    { "name": "Express.js", "level": "Intermediate" }
+    {
+      "name": "Node.js",
+      "level": 80
+    },
+    {
+      "name": "Express.js",
+      "level": 78
+    },
+    {
+      "name": "MongoDB",
+      "level": 82
+    },
+    {
+      "name": "Better Auth",
+      "level": 78
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "level": 88
+    },
+    {
+      "name": "GitHub",
+      "level": 88
+    },
+    {
+      "name": "Figma",
+      "level": 75
+    },
+    {
+      "name": "Penpot",
+      "level": 65
+    },
+    {
+      "name": "Vercel",
+      "level": 90
+    },
+    {
+      "name": "Netlify",
+      "level": 85
+    },
+    {
+      "name": "Render",
+      "level": 82
+    }
   ]
-
 }
