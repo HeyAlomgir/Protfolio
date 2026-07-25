@@ -2,19 +2,20 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaArrowUp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaArrowUp } from 'react-icons/fa';
 
 const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/HeyAlomgir', label: 'GitHub', hoverBg: 'hover:bg-slate-700', hoverText: 'hover:text-white' },
-    { icon: FaLinkedin, href: 'https://linkedin.com/in/alomgir', label: 'LinkedIn', hoverBg: 'hover:bg-blue-600', hoverText: 'hover:text-white' },
-    { icon: FaFacebook, href: 'https://facebook.com/alomgir', label: 'Facebook', hoverBg: 'hover:bg-blue-500', hoverText: 'hover:text-white' },
-    { icon: FaTwitter, href: 'https://twitter.com/alomgir', label: 'Twitter', hoverBg: 'hover:bg-sky-500', hoverText: 'hover:text-white' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/alomgir-hossain-web/', label: 'LinkedIn', hoverBg: 'hover:bg-blue-600', hoverText: 'hover:text-white' },
+    { icon: FaFacebook, href: 'https://www.facebook.com/AlomgirWEB', label: 'Facebook', hoverBg: 'hover:bg-blue-500', hoverText: 'hover:text-white' },
+
 ];
 
 const navLinks = [
     { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
+    { label: 'Services', href: '#services' },
     { label: 'Education', href: '#education' },
     { label: 'Projects', href: '#projects' },
     { label: 'Contact', href: '#contact' },

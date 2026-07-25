@@ -46,8 +46,8 @@ const contactCards = [
 
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/HeyAlomgir', label: 'GitHub', color: 'hover:bg-slate-700 hover:text-white' },
-  { icon: FaLinkedin, href: 'https://linkedin.com/in/alomgir', label: 'LinkedIn', color: 'hover:bg-blue-600 hover:text-white' },
-  { icon: FaFacebook, href: 'https://facebook.com/alomgir', label: 'Facebook', color: 'hover:bg-blue-500 hover:text-white' },
+  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/alomgir-hossain-web/', label: 'LinkedIn', color: 'hover:bg-blue-600 hover:text-white' },
+  { icon: FaFacebook, href: 'https://www.facebook.com/AlomgirWEB', label: 'Facebook', color: 'hover:bg-blue-500 hover:text-white' },
 ];
 
 // ── Contact info card — Services.jsx-এর মতো hover ─────────────────────────
