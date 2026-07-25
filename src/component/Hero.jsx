@@ -20,7 +20,7 @@ const Hero = () => {
     },
     {
       name: 'Facebook',
-      url: 'https://www.facebook.com/alomgir.hossain.938369',
+      url: 'https://www.facebook.com/AlomgirWEB',
       icon: <FaFacebookF />,
     },
   ];
