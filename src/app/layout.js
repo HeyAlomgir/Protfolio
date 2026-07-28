@@ -4,9 +4,10 @@ import Navbars from "@/component/Navbar";
 import { Toaster } from 'react-hot-toast';
 import Footer from '@/component/Footer';
 
-const jakartaSans = Plus_Jakarta_Sans({ 
+
+const jakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  display: 'swap', 
+  display: 'swap',
 });
 
 
@@ -25,10 +26,10 @@ export default function RootLayout({ children }) {
       className={`${jakartaSans.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbars/>
+        <Navbars />
         {children}
-        <Footer/>
-         <Toaster/>
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );
