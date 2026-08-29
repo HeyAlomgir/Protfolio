@@ -1,5 +1,4 @@
 import About from "@/component/About";
-import Certifications from "@/component/Certifications";
 import Contact from "@/component/Contact";
 import Education from "@/component/Education";
 import Hero from "@/component/Hero";
@@ -19,7 +18,7 @@ export default function Home() {
       <Skills />
       <Services />
       <Education />
-      <Certifications/>
+
       <ProjectsPage />
       <Contact />
 
