@@ -4,6 +4,7 @@ import Navbars from "@/component/Navbar";
 import { Toaster } from 'react-hot-toast';
 import Footer from '@/component/Footer';
 import PortfolioChatWidget from '@/component/PortfolioChatwidget';
+import ClientLayoutWrapper from '@/component/ClientLayoutWrapper';
 
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <Navbars />
         {children}
         <PortfolioChatWidget />
+        <ClientLayoutWrapper/>
         <Footer />
         <Toaster />
       </body>

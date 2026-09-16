@@ -4,11 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
-// ── এখানে তোমার imgbb লিংক বসাও ──────────────────────────────
-const PROFILE_IMAGE_URL = 'PASTE_YOUR_IMGBB_LINK_HERE';
 
-// কয়েকটা curated (steps, angle) জোড়া, প্রতিটাই সুন্দর spirograph প্যাটার্ন বানায়
-// প্রতিবার ভিজিটে random একটা বেছে নেওয়া হবে, তাই প্যাটার্ন প্রতিবার আলাদা দেখাবে
+const PROFILE_IMAGE_URL = 'https://i.ibb.co.com/BVX7Bq3n/Alomgir-2.png';
+
 const PATTERNS = [
     { steps: 36, angle: 170 },
     { steps: 48, angle: 151 },
@@ -38,12 +36,12 @@ export default function IntroLoader({ onFinish }) {
         const center = size / 2;
         const lineLength = size * 0.32;
 
-        // প্রতিবার ভিজিটে random প্যাটার্ন ও random শুরুর hue
+     
         const { steps, angle } = PATTERNS[Math.floor(Math.random() * PATTERNS.length)];
         const baseHue = Math.floor(Math.random() * 360);
 
-        const DRAW_DURATION = 2000; // ms — মূল আঁকার সময়
-        const HOLD_DURATION = 400; // আঁকা শেষে সামান্য বিরতি
+        const DRAW_DURATION = 2000; 
+        const HOLD_DURATION = 400;
         const startTime = performance.now();
 
         let x = center;
@@ -143,7 +141,7 @@ export default function IntroLoader({ onFinish }) {
                         </div>
                     </div>
 
-                    {/* নিচের নাম / ব্র্যান্ডিং */}
+                    {/* ননাম / ব্র্যান্ডিং */}
                     <motion.div
                         initial={{ opacity: 0, y: 14 }}
                         animate={{ opacity: 1, y: 0 }}
