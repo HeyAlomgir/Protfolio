@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbars from "@/component/Navbar";
 import { Toaster } from 'react-hot-toast';
 import Footer from '@/component/Footer';
+import PortfolioChatWidget from '@/component/PortfolioChatwidget';
 
 
 const jakartaSans = Plus_Jakarta_Sans({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbars />
         {children}
+        <PortfolioChatWidget />
         <Footer />
         <Toaster />
       </body>
