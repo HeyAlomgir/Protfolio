@@ -254,6 +254,7 @@ const Navbar = () => {
         { name: 'Education', id: 'education' },
         { name: 'Projects', id: 'projects' },
         { name: 'Contact', id: 'contact' },
+        
     ];
 
     // Default Dark Theme
@@ -371,7 +372,7 @@ const Navbar = () => {
                     </a>
 
                     {/* Desktop Menu */}
-                    <div className='hidden md:flex items-center gap-2'>
+                    <div className=' md:flex items-center gap-2'>
                         {menuItems.map((item) => {
                             const isActive = activeSection === item.id;
 

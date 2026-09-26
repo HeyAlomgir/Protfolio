@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <Navbars />
         {children}
         <PortfolioChatWidget />
-        <ClientLayoutWrapper/>
+        {/* <ClientLayoutWrapper/> */}
         <Footer />
         <Toaster />
       </body>
