@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbars />
         {children}
-        <PortfolioChatWidget />
-        {/* <ClientLayoutWrapper/> */}
+        {/* <PortfolioChatWidget /> */}
+        <ClientLayoutWrapper/>
         <Footer />
         <Toaster />
       </body>
