@@ -277,7 +277,7 @@ const Hero = () => {
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
               className='relative w-[360px] sm:w-[420px] lg:w-[540px] h-[460px] lg:h-[620px]'
-              style={{ perspective: '1000px' }}
+              style={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
             >
               {/* ── 3D Tilt Container ── */}
               <motion.div
@@ -354,100 +354,77 @@ const Hero = () => {
                   </motion.div>
                 </div>
 
-                {/* ── Floating 3D Cards (front layer) ── */}
-
-                {/* Projects Card — 3D float */}
-                <motion.div
-                  animate={{ y: [-8, 8, -8] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  whileHover={{ scale: 1.08, rotateY: -10, z: 20 }}
-                  className='absolute left-0 top-32 bg-white/95 dark:bg-[#111827]/95 backdrop-blur-xl rounded-2xl px-4 py-3 shadow-2xl border border-white/10 cursor-pointer'
-                  style={{ transform: 'translateZ(80px)', transformStyle: 'preserve-3d' }}
-                >
-                  <div className='flex items-center gap-3'>
-                    <div className='w-12 h-12 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold shadow-lg shadow-cyan-500/30'>
-                      35+
-                    </div>
-                    <div>
-                      <p className='text-slate-900 dark:text-white font-bold text-sm'>
-                        Projects
-                      </p>
-                      <p className='text-slate-500 dark:text-gray-400 text-xs'>
-                        Completed
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* Full Stack Card — 3D float */}
-                <motion.div
-                  animate={{ y: [8, -8, 8] }}
-                  transition={{ duration: 5, repeat: Infinity }}
-                  whileHover={{ scale: 1.08, rotateY: 10, z: 20 }}
-                  className='absolute right-0 bottom-28 bg-white/95 dark:bg-[#111827]/95 backdrop-blur-xl rounded-2xl px-5 py-4 shadow-2xl border border-white/10 cursor-pointer'
-                  style={{ transform: 'translateZ(90px)', transformStyle: 'preserve-3d' }}
-                >
-                  <div className='flex items-center gap-3'>
-                    <div className='w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg shadow-purple-500/30'>
-                      💻
-                    </div>
-                    <div>
-                      <p className='text-slate-900 dark:text-white font-bold text-sm'>
-                        Full-Stack
-                      </p>
-                      <p className='text-cyan-600 dark:text-cyan-400 text-xs font-semibold'>
-                        Developer
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* Available Card — 3D float */}
-                <motion.div
-                  animate={{ y: [-6, 6, -6] }}
-                  transition={{ duration: 3.5, repeat: Infinity }}
-                  whileHover={{ scale: 1.08, rotateX: 10, z: 20 }}
-                  className='absolute right-10 top-12 bg-white/95 dark:bg-[#111827]/95 backdrop-blur-xl rounded-2xl px-4 py-3 shadow-2xl border border-white/10 cursor-pointer'
-                  style={{ transform: 'translateZ(100px)', transformStyle: 'preserve-3d' }}
-                >
-                  <div className='flex items-center gap-2'>
-                    <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse' />
-                    <div>
-                      <p className='text-slate-900 dark:text-white font-bold text-sm'>
-                        Available
-                      </p>
-                      <p className='text-green-500 text-xs font-semibold'>
-                        For Hire
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* ── NEW: Tech Stack Orbiting Ring (3D) ── */}
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                  className='absolute inset-0 flex items-center justify-center pointer-events-none'
-                  style={{ transform: 'translateZ(60px)' }}
-                >
-                  {['⚛️', '🟢', '🔷', '🍃'].map((emoji, i) => (
-                    <motion.div
-                      key={i}
-                      className='absolute w-10 h-10 rounded-full bg-white/90 dark:bg-[#111827]/90 backdrop-blur-md flex items-center justify-center shadow-xl border border-white/20 text-lg'
-                      style={{
-                        top: `${50 + 42 * Math.sin((i * Math.PI * 2) / 4)}%`,
-                        left: `${50 + 42 * Math.cos((i * Math.PI * 2) / 4)}%`,
-                        transform: 'translate(-50%, -50%)',
-                      }}
-                      animate={{ rotate: -360 }}
-                      transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                    >
-                      {emoji}
-                    </motion.div>
-                  ))}
-                </motion.div>
-
               </motion.div>
+
+              {/* ═══ Floating 3D Cards — OUTSIDE tilt container, always visible ═══ */}
+
+              {/* Projects Card */}
+              <motion.div
+                animate={{ y: [-8, 8, -8] }}
+                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                whileHover={{ scale: 1.1, rotateY: -8 }}
+                className='absolute -left-6 sm:-left-4 top-24 sm:top-32 z-30 bg-white/95 dark:bg-[#111827]/95 backdrop-blur-xl rounded-2xl px-4 py-3 shadow-2xl border border-slate-200/50 dark:border-white/10 cursor-pointer'
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className='flex items-center gap-3'>
+                  <div className='w-12 h-12 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold shadow-lg shadow-cyan-500/30'>
+                    35+
+                  </div>
+                  <div>
+                    <p className='text-slate-900 dark:text-white font-bold text-sm'>
+                      Projects
+                    </p>
+                    <p className='text-slate-500 dark:text-gray-400 text-xs'>
+                      Completed
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Full Stack Card */}
+              <motion.div
+                animate={{ y: [8, -8, 8] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+                whileHover={{ scale: 1.1, rotateY: 8 }}
+                className='absolute -right-6 sm:-right-4 bottom-20 sm:bottom-28 z-30 bg-white/95 dark:bg-[#111827]/95 backdrop-blur-xl rounded-2xl px-5 py-4 shadow-2xl border border-slate-200/50 dark:border-white/10 cursor-pointer'
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className='flex items-center gap-3'>
+                  <div className='w-12 h-12 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg shadow-purple-500/30'>
+                    💻
+                  </div>
+                  <div>
+                    <p className='text-slate-900 dark:text-white font-bold text-sm'>
+                      Full-Stack
+                    </p>
+                    <p className='text-cyan-600 dark:text-cyan-400 text-xs font-semibold'>
+                      Developer
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Available Card */}
+              <motion.div
+                animate={{ y: [-6, 6, -6] }}
+                transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+                whileHover={{ scale: 1.1 }}
+                className='absolute right-0 sm:right-6 top-4 sm:top-8 z-30 bg-white/95 dark:bg-[#111827]/95 backdrop-blur-xl rounded-2xl px-4 py-3 shadow-2xl border border-slate-200/50 dark:border-white/10 cursor-pointer'
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className='flex items-center gap-2'>
+                  <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse' />
+                  <div>
+                    <p className='text-slate-900 dark:text-white font-bold text-sm'>
+                      Available
+                    </p>
+                    <p className='text-green-500 text-xs font-semibold'>
+                      For Hire
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
             </div>
           </motion.div>
         </div>
