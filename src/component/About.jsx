@@ -295,19 +295,7 @@ export default function About() {
                 style={{ transform: 'translateZ(110px)' }}
               >
                 <div className="bg-white/90 dark:bg-[#111827]/95 backdrop-blur-xl rounded-2xl px-3.5 py-2.5 shadow-2xl border border-slate-200/80 dark:border-white/10">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-white text-base">
-                      💻
-                    </div>
-                    <div>
-                      <p className="text-slate-900 dark:text-white font-semibold text-sm leading-none">
-                        MERN
-                      </p>
-                      <p className="text-cyan-600 dark:text-cyan-400 text-[11px] font-semibold mt-0.5">
-                        Stack
-                      </p>
-                    </div>
-                  </div>
+
                 </div>
               </motion.div>
 
@@ -445,8 +433,8 @@ export default function About() {
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`relative px-6 py-2.5 rounded-full text-sm font-semibold transition-colors duration-300 ${activeTab === tab
-                    ? 'text-white'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400'
+                  ? 'text-white'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400'
                   }`}
               >
                 {activeTab === tab && (
